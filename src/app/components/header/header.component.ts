@@ -13,4 +13,8 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggleText() {
+    console.log('hello')
+  }
+
 }

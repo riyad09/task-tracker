@@ -1,5 +1,9 @@
 <header>
   <h1>{{title}}</h1>
-  <app-button></app-button>
+  <app-button 
+  text="Add me" 
+  color="red" 
+  (addBtnClick)="toggleText()"
+  ></app-button>
 </header>
 
