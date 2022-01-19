@@ -14,7 +14,6 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleText() {
-    console.log('hello')
   }
 
 }
