@@ -16,26 +16,9 @@
       "id": 1,
       "body": "some comment mmmm",
       "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment",
-      "postId": 2
     }
   ],
   "tasks": [
-    {
-      "id": "1",
-      "text": "First task",
-      "day": "Jan 20 at 2 pm",
-      "reminder": true
-    },
-    {
-      "id": "2",
-      "text": "2nd task",
-      "day": "Jan 20 at 2 pm",
-      "reminder": true
-    },
     {
       "id": "3",
       "text": "3rd task",
