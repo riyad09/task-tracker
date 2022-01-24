@@ -4,7 +4,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { Router, RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -16,8 +16,8 @@ import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 const routes: Routes = [
-  {path: '', component: TaskComponent},
-  {path: 'about', component: AboutComponent},
+  { path: '', component: TaskComponent },
+  { path: 'about', component: AboutComponent },
 ]
 
 

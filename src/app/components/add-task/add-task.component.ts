@@ -23,8 +23,7 @@ export class AddTaskComponent implements OnInit {
 
   }
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   onSubmit() {
     if (!this.text) {
@@ -39,7 +38,6 @@ export class AddTaskComponent implements OnInit {
       reminder: this.reminder
     }
   
-
     this.onAddTask.emit(newTask);
       this.text = '',
       this.day = '',
