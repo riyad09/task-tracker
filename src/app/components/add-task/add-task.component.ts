@@ -15,7 +15,6 @@ export class AddTaskComponent implements OnInit {
   reminder: boolean = false;
   showAddTask: boolean =  false;
   subscription: Subscription;
-  startDate!: Date;
 
   constructor(private uiService: UiService) { 
     this.subscription = this.uiService
@@ -26,11 +25,7 @@ export class AddTaskComponent implements OnInit {
 
   ngOnInit(): void {}
   inputEvent (event: any) {
-    console.log(event.value);
-  }
-
-  changeEvent(ev: any) {
-    console.log('test', ev);
+    this.day = event.value.toDateString();
   }
 
   onSubmit() {
@@ -39,8 +34,6 @@ export class AddTaskComponent implements OnInit {
       return;
     }
     
-    console.log('checking 123', this.startDate)
-
     const newTask = {
       id: new Date().getTime(),
       text: this.text,

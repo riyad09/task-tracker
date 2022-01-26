@@ -3,14 +3,10 @@
     <label for="text">Task</label>
     <input type="text" name="text" [(ngModel)]="text" id="text" placeholder="Task title" />
   </div>
-  <div class="form-control">
-    <label for="text">Day & time</label>
-    <input type="text" name="day" [(ngModel)]="day" id="day" placeholder="Day & time" />
-  </div>
+  
   <mat-form-field appearance="fill">
     <mat-label>Choose a date</mat-label>
-    <input matInput [matDatepicker]="picker" (dateInput)="inputEvent($event)" (dateChange)="changeEvent($event)">
-
+    <input matInput [matDatepicker]="picker" (dateInput)="inputEvent($event)">
     <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
     <mat-datepicker #picker></mat-datepicker>
   </mat-form-field>
